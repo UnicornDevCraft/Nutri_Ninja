@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NutriNinja</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+  </head>
+  <body>
+    <!-- start the navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="images/logo.svg" alt="Nutri Ninja logo">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutUs">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recipes">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <button type="button" class="rounded-pill btn-rounded" id="join-channel">Join channel
+            <span>
+              <i class="bi bi-telegram"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+      <!--start the intro section-->
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+            <!-- START THE CONTENT FOR THE INTRO -->
+          <div class="col-md-6 intros text-start">
+            <h1 class="display-2">
+              <span class="display-2--intro">Welcome to <br><span id="name">NUTRI NINJA</span></span>
+              <span class="display-2--description lh-lg">The Healthy Ninja's Cookbook!</span>
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded" id="get-started" onclick="window.location.href='#contact'">Get Started
+              <span>
+                <i id="ninja" class="fa-solid fa-user-ninja"></i>
+              </span>
+            </button>
+          </div>
+              <!-- START THE CONTENT FOR THE VIDEO -->
+          <div class="col-md-6 intros text-end">
+            <div class="video-box">
+              <img src="https://unicorndevcraft.github.io/NutriNinja/images/arts/video.png" alt="woman sitting on a chair with a salad illustration" class="img-fluid">
+              <a href="#" class="glightbox position-absolute top-50 start-50" aria-label="Link to NutriNinja YouTube channel">
+                <span>
+                  <i class="fa-solid fa-play-circle"></i>
+                </span>
+                <span class="border-animation border-animation--1"></span>
+                <span class="border-animation border-animation--2"></span>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="wave"><path fill="#ffffff" fill-opacity="1" d="M0,32L48,58.7C96,85,192,139,288,144C384,149,480,107,576,90.7C672,75,768,85,864,128C960,171,1056,245,1152,256C1248,267,1344,213,1392,186.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+<!-- start section ABOUT US -->
+    <section id="aboutUs" class="aboutus">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">About us</h1>
+          <div class="heading-line mb-1"></div>
+        </div>
+        <!-- start description content -->
+        <div class="row pt-2 pb-2 mt-0 mb-3">
+          <div class="col-md-6 border-right">
+            <div class="bg-white p-3">
+              <h2 class="fw-bold text-center about-line">
+                At <span>Nutri Ninja</span> we're passionate about empowering individuals to take control of their health and well-being through the power of food.
+              </h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-white p-4 text-start">
+              <p class="fw-light about-descr">
+                Our team of culinary <b>ninjas</b> is dedicated to providing you with the tools, knowledge, and inspiration you need to make healthy eating enjoyable, accessible, and sustainable for life.
+                We created a culinary <b>nutri ninja</b> helper that is always at hand!
+                Inside our bot, you will find <em>everything you need</em>:
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- start the content for about us -->
+      <div class="container">
+        <!-- start the varied menus -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutus mt-4 text-start">
+            <div class="aboutus__pic">
+              <img src="images/arts/calendar.png" alt="big calendar illustration" class="img-fluid">     
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutus mt-4">
+            <div class="aboutus__content">
+              <div class="icon d-block"><i class="bi bi-calendar-heart-fill"></i></div>
+              <h3 class="display-3--title mt-1">Menus</h3>
+              <p class="lh-lg">We believe that healthy eating should be delicious, diverse, and sustainable for the long term. That's why we've created a series of balanced menus designed to nourish your body, support your goals, and ignite your taste buds with flavor-packed meals.</p>
+              <button type="button" class="rounded-pill btn-rounded border-primary" onclick="window.location.href='#recipes'">Learn more
+                <span><i class="bi bi-arrow-right arrows"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+          <!-- start the ideas section -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutus mt-1">
+            <div class="aboutus__content">
+              <div class="icon d-block"><i class="bi bi-lightbulb-fill"></i></div>
+              <h3 class="display-3--title mt-1">Ideas</h3>
+              <p class="lh-lg">Let's transform our lives together, one delicious meal at a time! Discover new ideas for breakfast, lunch, dinner amd snack that will provide a good balance of nutrients and flavors to keep you satisfied and energized throughout the day. </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary" onclick="window.location.href='#recipes'" >Learn more
+                <span><i class="bi bi-arrow-right arrows"></i></span>
+            </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutus mt-1 text-end">
+            <div class="aboutus__pic">
+              <img src="images/arts/meal.png" alt="healthy meal illustration" class="img-fluid">
+            </div>
+          </div>
+        </div>
+          <!-- start the themed recepies -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutus mt-1 text-start">
+            <div class="aboutus__pic">
+              <img src="images/arts/family_meal.png" alt="family meal illustration" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutus mt-1">
+            <div class="aboutus__content">
+              <div class="icon d-block"><i class="bi bi-balloon-fill"></i></div>
+              <h3 class="display-3--title mt-1">Themed Recipes</h3>
+              <p class="lh-lg">Say goodbye to mealtime stress during holidays with our themed recipe collections for special occasions. Whether you're celebrating New Year's, Valentine's Day, or Hanukkah, we've got a collection of recipes to suit every occasion.</p>
+              <button type="button" class="rounded-pill btn-rounded border-primary" onclick="window.location.href='#recipes'">Learn more
+                <span><i class="bi bi-arrow-right arrows"></i></span>
+            </button>
+            </div>
+          </div>
+        </div>
+          <!-- start the quick and easy section -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutus mt-1">
+            <div class="aboutus__content">
+              <div class="icon d-block"><i class="bi bi-alarm-fill"></i></div>
+              <h3 class="display-3--title mt-1">Expert Tips</h3>
+              <p class="lh-lg">Save time with our meal prep guides and hacks. Learn how to streamline your grocery shopping, prep ingredients in advance, and batch cook meals for the week ahead like a pro. Whether you're looking to lose weight, boost your energy levels, or simply eat better, our team of experts is here to support you on your journey.</p>
+              <button type="button" class="rounded-pill btn-rounded border-primary" onclick="window.location.href='#recipes'">Learn more
+                <span><i class="bi bi-arrow-right arrows"></i></span>
+            </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutus mt-1 text-end">
+            <div class="aboutus__pic">
+              <img src="images/arts/shopping.png" alt="shopping illustration" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!--start section the TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,170.7C384,160,480,96,576,85.3C672,75,768,117,864,117.3C960,117,1056,75,1152,74.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      <div class="container">
+        <div class="row text-center text-white">
+          <h1 class="display-3 fw-bold">Testimonials</h1>
+          <hr class="mx-auto">
+          <p class="lead pt-1">What our clients are saying</p>
+        </div>
+        <!-- start the carousel -->
+        <div class="row align-items-center">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+              <!-- carousel item 1 -->
+              <div class="carousel-item active">
+                <!-- testimonials card start -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <img src="images/quote-left.svg" alt="quote-left">
+                    I've struggled with finding healthy and delicious recipes that fit my busy lifestyle for years. Nutri Ninja has been a game-changer for me! Their recipes are not only easy to follow but also incredibly tasty. Thanks to Nutri Ninja, I've been able to make healthier choices without sacrificing flavor. I especially appreciate their attention to detail in providing alternative ingredient options and substitutions. Highly recommend!
+                    <img src="images/quote-right.svg" alt="quote right">
+                  </p>
+                    <div class="ratings p-1 mb-3">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                  <!-- client picture -->
+                <div class="testimonials__picture">
+                  <img src="images/testimonials/woman4.jpg" alt="client-1 picture" class="rounded-circle img-fluid">
+                </div>
+                  <!-- client name & location -->
+                <div class="testimonials__name">
+                  <h3>Sarah Hostal</h3>
+                  <p class="fw-light">Los Angeles, CA</p>
+                </div>
+              </div>
+                <!-- carousel item 2 -->
+              <div class="carousel-item">
+                <!-- testimonials card start -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <img src="images/quote-left.svg" alt="quote-left">
+                    As a busy mom, meal planning has always been a challenge for me. But Nutri Ninja has made it so much easier! Their themed recipe collections, like the New Year's collection, have been a lifesaver for me during the holidays. The recipes are not only festive but also nutritious and family-friendly. Nutri Ninja has helped me create memorable meals for my family without the stress. Thank you!
+                    <img src="images/quote-right.svg" alt="quote right">
+                  </p>
+                    <div class="ratings p-1 mb-3">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                  <!-- client picture -->
+                <div class="testimonials__picture">
+                  <img src="images/testimonials/woman2.jpg" alt="client-2 picture" class="rounded-circle img-fluid">
+                </div>
+                <!-- client name & location -->
+                <div class="testimonials__name">
+                  <h3>Emily Park</h3>
+                  <p class="fw-light">Chicago, IL</p>
+                </div>
+              </div>
+                <!-- carousel item 3 -->
+              <div class="carousel-item">
+                <!-- testimonials card start -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <img src="images/quote-left.svg" alt="quote-left">
+                    I've been on a journey to improve my health and wellness, and Nutri Ninja has been an invaluable resource every step of the way. From their expert tips and advice to their delicious recipes, Nutri Ninja has helped me make healthier choices and feel better than ever. Thanks to Nutri Ninja, I've been able to enjoy delicious meals without compromising my health. I'm so grateful for their support and inspiration!
+                    <img src="images/quote-right.svg" alt="quote right">
+                  </p>
+                    <div class="ratings p-1 mb-3">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                  <!-- client picture -->
+                <div class="testimonials__picture">
+                  <img src="images/testimonials/man1.jpg" alt="client-3 picture" class="rounded-circle img-fluid">
+                </div>
+                <!-- client name & location -->
+                <div class="testimonials__name">
+                  <h3>Michael Laurent</h3>
+                  <p class="fw-light">New York, NY</p>
+                </div>
+              </div>
+                <!-- carousel item 4 -->
+              <div class="carousel-item">
+                  <!-- testimonials card start -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <img src="images/quote-left.svg" alt="quote-left">
+                    I've never been much of a cook, but Nutri Ninja has made it so easy for me to whip up healthy and delicious meals in no time! Their recipes are simple, straightforward, and packed with flavor. I love that they provide nutritional information for each recipe, making it easy for me to stay on track with my health goals. Thank you, Nutri Ninja, for making healthy eating so enjoyable!
+                    <img src="images/quote-right.svg" alt="quote right">
+                  </p>
+                    <div class="ratings p-1 mb-3">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                  <!-- client picture -->
+                <div class="testimonials__picture">
+                  <img src="images/testimonials/woman3.jpg" alt="client-4 picture" class="rounded-circle img-fluid">
+                </div>
+                  <!-- client name & location -->
+                <div class="testimonials__name">
+                  <h3>Patricia Callens</h3>
+                  <p class="fw-light">Austin, TX</p>
+                </div>
+              </div>
+                <!-- carousel item 5 -->
+              <div class="carousel-item">
+                  <!-- testimonials card start -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <img src="images/quote-left.svg" alt="quote-left">
+                    I've been following Nutri Ninja for a while now, and I can honestly say it's been a game-changer for my health and well-being. The themed recipe collections, like the New Year's collection, have been so helpful in keeping me motivated and inspired on my wellness journey. I love that Nutri Ninja offers a variety of recipes to suit different dietary preferences and lifestyles. Keep up the fantastic work!"
+                    <img src="images/quote-right.svg" alt="quote right">
+                  </p>
+                    <div class="ratings p-1 mb-3">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                <!-- client picture -->
+                <div class="testimonials__picture">
+                  <img src="images/testimonials/woman1.jpg" alt="client-5 picture" class="rounded-circle img-fluid">
+                </div>
+                <!-- client name & location -->
+                <div class="testimonials__name">
+                  <h3>Michelle Giovanni</h3>
+                  <p class="fw-light">Miami, FL</p>
+                </div>
+              </div> 
+            </div>
+            <div class="text-center">
+              <button class="btn btn-outline-light bi bi-arrow-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" aria-label="Previous button"></button>
+              <button class="btn btn-outline-light bi bi-arrow-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" aria-label="Next button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,117.3C96,139,192,181,288,170.7C384,160,480,96,576,85.3C672,75,768,117,864,117.3C960,117,1056,75,1152,74.7C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+      <!-- start section FAQ -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+          <div class="heading-line mt-1 mb-3"></div>
+          <p class="lead">Frequently asked questions, get knowledge before hand</p>
+        </div>
+        <!-- accordion content -->
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <div class="accordion" id="accordionExample">
+              <!-- accordion #1 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How can I access the themed recipe collections on Nutri Ninja?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    To access the themed recipe collections on Nutri Ninja, simply navigate to the "Recipes" section of our website. From there, you'll find a variety of themed collections, including our popular New Year's collection and other seasonal favorites. Click on any collection to browse through the recipes and get inspired to create delicious and nutritious meals for any occasion.
+                  </div>
+                </div>
+              </div>
+              <!-- accordion #2 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Are the recipes on Nutri Ninja suitable for specific dietary preferences or restrictions?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Yes! At Nutri Ninja, we strive to provide recipes that cater to a variety of dietary preferences and restrictions. Whether you're vegetarian, vegan, gluten-free, or following a specific eating plan like keto or paleo, you'll find a wide range of options to suit your needs. Each recipe includes detailed ingredient lists and instructions, as well as information on dietary considerations, such as allergens or special diets.
+                  </div>
+                </div>
+              </div>
+              <!-- accordion #3 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I customize the serving sizes or ingredients in Nutri Ninja recipes?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Absolutely! We understand that everyone's tastes and nutritional needs are unique, which is why we encourage you to customize our recipes to suit your preferences. You can easily adjust the serving sizes, swap out ingredients, or add your own personal touches to make each recipe your own. Feel free to get creative and experiment with different flavors and combinations to find what works best for you.
+                  </div>
+                </div>
+              </div>
+              <!-- accordion #4 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    How can I stay updated on new recipes, tips, and special offers from Nutri Ninja?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Stay connected with Nutri Ninja by subscribing to our <a href="https://t.me/nutrikatkapro">Telegram channel</a>! Or enter your email address in the <a href="#contact">subscription box</a> located at the bottom of our website, and you'll receive regular updates on new recipes, meal planning tips, and exclusive offers delivered straight to your inbox. You can also follow us on social media for daily inspiration and to join our community of health enthusiasts.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- start section recipes -->
+    <section id="recipes" class="recipes">
+      <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="display-3 fw-bold">Recipes</h1>
+          <div class="heading-line mt-1 mb-3"></div>
+          <p class="lead">
+            Ready to embark on your journey to better health? Dive into the world of Nutri Ninja and discover the joy of balanced eating today!
+          </p>
+        </div>
+        <!-- filter button -->
+        <div class="row mt-2 mb-4 g-3 text-center">
+          <div class="col-md-12" id="myBtnContainer">
+            <button class="btn btn-outline-primary active" data-name="all" type="button">All</button>
+            <button class="btn btn-outline-primary" data-name="uni" type="button">Universal</button>
+            <button class="btn btn-outline-primary" data-name="themed" type="button">Themed</button>
+            <button class="btn btn-outline-primary" data-name="quick" type="button">Quick</button>
+            <button class="btn btn-outline-primary" data-name="vegan" type="button">Vegan</button>
+          </div>
+        </div>
+      </div>
+      <!-- Filterable cards -->
+      <div class="row filterable_cards">
+        <div class="col-lg-4 col-md-6 bard" data-name="uni">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Universal_noe_menyu.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/meal.jpg" alt="big bowl with tasty tasty vegetables, rice and side dish" title="Click to download universal menu" class="img-fluid">
+              <div class="recipes-info">
+                <div class="caption">
+                  <h4>Universal menu</h4>
+                  <p>Everyday recipes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="themed">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Letnee_menyu.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/universal.jpg" alt="a bowl of fresh raspberries" title="Click to download summer menu" class="img-fluid">
+              <div class="recipes-info">
+                <div class="caption">
+                  <h4>Summer menu</h4>
+                  <p>Seasonal recipes</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="quick">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Smuzi.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/smothie.jpg" alt="a glass with berries smoothie" title="Click to download smoothie recipes" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>Smoothie</h4>
+                    <p>Special recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="themed">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Ital_yanskoe_menyu.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/italian.jpg" alt="ingredients for Italian recipes" title="Click to download Italian recepies" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>Italian menu</h4>
+                    <p>Customized recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="uni">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Menyu_na_lyuboy_vkus.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/any-taste.jpg" alt="a big bowlof salad with optional seasonings" title="Click to download a menu for all tastes" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>A menu for all tastes</h4>
+                    <p>Family recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="quick">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Samoe_byistroe_menyu.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/quick.jpg" alt="a fig bruschetta on a cutting board" title="Click to download a menu with quick recipes" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>Quick recipes</h4>
+                    <p>Special recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="themed">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Zimniy_sbornik_retseptov.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/winter.jpg" alt="A Christmas pie on a plate" title="Click to download winter menu" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>Winter menu</h4>
+                    <p>Seasonal recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="themed">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Turetskaya_nedelya.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/turkish.jpg" alt="A cutting bord fool of grilled meat and side dishes" title="Click to download Turkish menu" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>Turkish menu</h4>
+                    <p>Customized recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="themed">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Tyikvennyie_retseptyi.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/pumpkin.jpg" alt="a bowl of pumpkin soup" title="Click to download Pumpkin menu" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>Pumpkin menu</h4>
+                    <p>Special recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="quick">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/PP_po-mujski.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/manly.jpg" alt="a steak with asparagus" title="Click to download Manly menu" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>Manly menu</h4>
+                    <p>Special recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="themed">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Prazdnichnyiy_furshet.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/christmas.jpg" alt="Christmas table" title="Click to download New Year menu" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>New Year menu</h4>
+                    <p>Party recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 bard" data-name="vegan">
+          <div class="recipes-box shadow">
+            <a href="assets/nutriKatka/Veganskoe_menyu.pdf" class="recipes-download" title="Click to download recipes" target="_blank" type="application/pdf">
+              <img src="images/recipes/vegan.jpg" alt="avocado, asparagus and tomatoes on a table" title="Click to download Vegan menu" class="img-fluid">
+                <div class="recipes-info">
+                  <div class="caption">
+                    <h4>Vegan menu</h4>
+                    <p>Unique recipes</p>
+                  </div>
+                </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- start section get started -->
+    <section id="contact" class="get-started">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-capitalize">Get started</h1>
+          <div class="heading-line mt-1 mb-3"></div>
+          <p class="lh-lg">
+            Access a wealth of resources, including articles, guides, and videos, to help you achieve your health and wellness goals. <br> Sign up to receive exclusive recipes, meal planning tips, and special offers delivered straight to your inbox.
+          </p>
+        </div>
+        <!-- start the CTA content -->
+        <div class="row text-white mt-5">
+          <div class="col-12 col-lg-6 gradient shadow p-3">
+            <div class="cta-info w-100">
+              <h4 class="display-4 fw-bold">Start Your Health Journey Today!</h4>
+              <p class="lh-lg"> Join our vibrant community of foodies and health enthusiasts! Connect with like-minded individuals, share your culinary creations, and inspire others on their journey to wellness.</p>
+              <h3 class="display-3--brief">What will be the next step?</h3>
+              <ul class="cta-info__list">
+                <li><i class="bi bi-check"></i>Subscribe for Exclusive Offers</li>
+                <li><i class="bi bi-check"></i>Create Your Custom Meal Plan</li>
+                <li><i class="bi bi-check"></i>Get Cooking Today!</li>
+              </ul>
+              <p class="lh-sm cta-info__add">Have questions, feedback, or suggestions? We'd love to hear from you! <br> Drop us a line at <a href="mailto:contact@nutrininja.com">contact@nutrininja.com</a>  and let us know how we can assist you on your journey to wellness.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 bg-white shadow p-3">
+            <div class="form w-100 pb-2">
+              <h4 class="display-3--title mb-5">Tell us about you</h4>
+              <form action="#" class="row">
+                <div class="col-lg-6 col-md-6 mb-3">
+                  <label for="inputFirstName">First Name: </label>
+                  <input type="text" id="inputFirstName" class="shadow form-control form-control-lg" aria-label="">
+                </div>
+                <div class="col-lg-6 col-md-6 mb-3">
+                  <label for="inputLastName">Last name: </label>
+                  <input type="text" id="inputLastName" class="shadow form-control form-control-lg">
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <label for="inputEmail">E-mail address: </label>
+                  <input type="email" id="inputEmail" class="shadow form-control form-control-lg">
+                </div>
+                <div class="col-lg-12 mb-3">
+                  <label for="Message">Additional information:</label>
+                  <textarea name="Message" placeholder="Set the goal or write your preferences, allergies etc.." id="Message" rows="10" class="shadow form-control form-control-lg"></textarea>
+                </div>
+                <div class="text-center d-grid mt-1">
+                  <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">Submit <i class="bi bi-send-fill"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start the FOOTER section -->
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <div class="row">
+          <!-- content for the mobile number -->
+          <div class="col-md-4 col-lg-4 contact-box pt-2 d-md-block d-lg-flex d-flex">
+            <div class="contact-box__icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              <path d="M15 7a2 2 0 0 1 2 2" />
+              <path d="M15 3a6 6 0 0 1 6 6" />
+            </svg></div>
+            <div class="contact-box__info">
+              <a href="tel:+420777555333" class="contact-box__info--title">+420 777-555-333</a>
+              <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
+            </div>
+          </div>
+          <!-- content for the email -->
+          <div class="col-md-4 col-lg-4 contact-box pt-2 d-md-block d-lg-flex d-flex">
+            <div class="contact-box__icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
+              <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+              <path d="M3 19l6 -6" />
+              <path d="M15 13l6 6" />
+            </svg></div>
+            <div class="contact-box__info">
+              <a href="mailto:info@nutrininja.com" class="contact-box__info--title">info@nutrininja.com</a>
+              <p class="contact-box__info--subtitle">Online support</p>
+            </div>
+          </div>
+          <!-- content for the location -->
+          <div class="col-md-4 col-lg-4 contact-box pt-2 d-md-block d-lg-flex d-flex">
+            <div class="contact-box__icon"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" />
+              <path d="M9 4v13" />
+              <path d="M15 7v5.5" />
+              <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+              <path d="M19 18v.01" />
+            </svg></div>
+            <div class="contact-box__info">
+              <a href="https://www.google.com/maps/place/%D0%9F%D1%80%D0%B0%D0%B6%D1%81%D0%BA%D0%B8%D0%B5+%D0%BA%D1%83%D1%80%D0%B0%D0%BD%D1%82%D1%8B/@50.0785044,14.4403464,14z/data=!4m6!3m5!1s0x470b94e939c02f49:0xf17b44b25aa20696!8m2!3d50.0870215!4d14.4207065!16zL20vMDMydDBm?entry=ttu" target="_blank" class="contact-box__info--title">Prague, Czech Republic</a>
+              <p class="contact-box__info--subtitle">Staroměstské Náměstí 1, 11000 Prague</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start the social media content -->
+      <div class="footer-sm  mt-1">
+        <div class="container">
+          <div class="row py-4 justify-content between">
+            <div class="col-lg-8 col-md-6 mb-4 social-media text-center">
+              <p class="lead text-white">Connect with us on social media and become part of the #NutriNinja community! <br> Follow us on Instagram, Facebook, and X (Twitter) for daily inspiration and join the conversation with fellow ninjas from around the globe.</p>
+              <a href="https://www.instagram.com/nutrikatka?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Link to NutriNinja Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.facebook.com/share/ikDNWXsFc1XrL6w6/" aria-label="Link to NutriNinja Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://x.com/healthyfoodmag" aria-label="Link to NutriNinja X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+            <div class="col-lg-4 col-md-6 align-self-center">
+              <div id='nutriMap'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start the copyright part -->
+      <div class="footer-bottom pt-3 pb-3">
+        <div class="container">
+          <div class="row  text-center text-white">
+            <div class="col-12">
+              <div class="footer-bottom__copyright">
+                &COPY; Copyright 2024 <a href="#home">Nutri Ninja</a> | Created by <a href="BigForSmall.github.io">UnicornzZz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- back to top button -->
+    <a href="#home" class="shadow btn btn-secondary rounded-circle back-to-top" aria-label="Back to top button">
+      <i class="bi bi-chevron-up"></i>
+    </a>
+
+    <script src="https://kit.fontawesome.com/2f5bc3cf0d.js" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoidW5pY29ybnoiLCJhIjoiY2x2ZTh2YzA1MDdjcTJrcHIxNzBoYW9ocyJ9.1CnLNrBwZgBeqSq_F9vVHA';
+      var map = new mapboxgl.Map({
+      container: 'nutriMap',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [14.42076, 50.08804],
+      zoom: 18
+      });
+    </script>
+    <script>
+      const lightbox = GLightbox({
+        'href': 'https://youtu.be/GCFM4x69kKU?si=yIrUkBWSLeGa_Bil',
+        'type': 'video',
+        'source': 'youtube', //vimeo, youtube or local
+        'width': 900,
+        'autoPlayVideos': 'true',
+      });
+    </script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
