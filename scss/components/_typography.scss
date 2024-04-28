@@ -1,0 +1,131 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.display-2 {
+
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+
+    &--intro {
+        @include media-breakpoint-up(lg) {
+            font-size: 3rem;
+        }
+        @include media-breakpoint-up(xl) {
+            font-size: 3.5rem;
+        }
+        @include media-breakpoint-up(xxl) {
+            font-size: 4rem;
+        }
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $white;
+        font-family: "Poppins", sans-serif;
+
+        #name {
+            @include media-breakpoint-up(lg) {
+                font-size: 4rem;
+            }
+            @include media-breakpoint-up(xl) {
+                font-size: 5rem;
+            }
+            @include media-breakpoint-up(xxl) {
+                font-size: 6rem;
+            }
+            
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+
+    }
+    &--description {
+        font-size: 1.2rem;
+        display: block;
+        color: $white;
+        margin-top: 1.2rem;
+        text-transform: none;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+}
+
+// heading line
+
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+}
+
+//display-3
+
+.display-3 {
+
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+
+    &--title {
+        display: inline-block;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        background-image: linear-gradient(to right, $primary, $secondary);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+//about-line
+.about-line {
+    font-size: 1.8rem;
+    span {
+        text-transform: uppercase;
+        font-family: 'CF Samurai Bob Regular', sans-serif;
+        color: $primary;
+        font-size: 3rem;
+    }
+}
+.about-descr {
+    font-size: 1.3rem;
+
+    b {
+        text-transform: uppercase;
+        font-family: 'CF Samurai Bob Regular', sans-serif;
+        color: $primary;
+        font-size: 1.7rem;
+    }
+}
+
+// border right
+
+.border-right {
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+}
+//gradient bg
+.gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+
+}

@@ -1,0 +1,45 @@
+// Color system
+// MY THEME COLORS
+
+$dark-green: #327640;
+$light-green: #50b765;
+$salad:    #94fb80;
+$footer: #141514;
+
+// white and gray colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// colors assighnment
+$primary:       $dark-green;
+$secondary:     $salad;
+
+//ACCORDION OVERRIDES
+$accordion-padding-y:                     1.5rem;
+$accordion-padding-x:                     1.5rem;
+$accordion-button-active-bg:              rgba($secondary, 0.4);
+$accordion-button-focus-border-color:     $primary;
+$accordion-icon-color:                    $primary;
+$accordion-icon-active-color:             $secondary;
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='none' stroke='#{$accordion-icon-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>") ;
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18' fill='none' stroke='#{$accordion-icon-active-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>") ;
+$accordion-icon-width:                    1.75rem;
+
+// IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// IMPORT FONT
+@font-face {
+    font-family: 'CF Samurai Bob Regular';
+    src: url(../assets/css/CfSamuraiBobRegular.ttf) format('truetype');
+  }
+  

@@ -1,0 +1,60 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.get-started {
+    padding: 4rem 0;
+    background-color: rgba($light-green, 0.4)
+    ;
+
+
+    a {
+        color: $white;
+    }
+}
+.cta-info {
+    padding: 3rem;
+    margin: 1rem 0;
+
+    &__list {
+        position: relative;
+        list-style-type: none;
+        display: block;
+
+        li i {
+            font-size: 1.75rem;
+            vertical-align: -0.175em !important;
+        }
+    }
+    &__add {
+        margin-top: 3rem;
+    }
+}
+// Form content
+
+.form {
+    padding: 3rem;
+
+    label {
+        color: $primary;
+        padding-left: 0.2rem;
+        font-size: 1.3rem;
+    }
+
+    button {
+        
+        color: $white;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
+    button:hover {
+        color: $primary;
+    }
+    button i {
+        padding-left: 0.3rem;
+        font-size: 1rem;
+    }
+}

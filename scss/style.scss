@@ -1,0 +1,25 @@
+@use 'custom';
+
+//import the components
+
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mixins';
+@use 'components/typography';
+
+//import the sections
+
+@use 'sections/faq';
+@use 'sections/footer';
+@use 'sections/get-started';
+@use 'sections/intro-section';
+@use 'sections/navbar';
+@use 'sections/recipes';
+@use 'sections/aboutus';
+@use 'sections/testimonials';
+
+// IMPORT FONT
+@font-face {
+    font-family: 'CF Samurai Bob Regular';
+    src: url(../assets/css/CfSamuraiBobRegular.ttf) format('truetype');
+  }

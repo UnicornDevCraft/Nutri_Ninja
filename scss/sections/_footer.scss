@@ -1,0 +1,112 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+    padding-top: 2rem;
+    background-color: $footer;
+}
+
+//style the contact-box content
+
+.contact-box {
+    position: relative;
+
+    &__icon {
+        width: 2rem;
+        stroke: $secondary;
+        padding-top: 0.5rem;
+
+        @include media-breakpoint-up(sm) {
+            width: 4rem;
+            padding-top: 0;
+            
+        }
+    }
+
+    &__info {
+        padding: 0.4rem;
+        font-weight: 200;
+
+        &--title {
+            color: $white;
+            text-decoration: none;
+            font-size: 1rem;
+            
+        @include media-breakpoint-up(sm) {
+            font-size: 1.4rem;
+        }
+        }
+
+        &--subtitle {
+            color: $light-green;
+            text-decoration: none;
+            font-size: 0.8rem;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 1rem;
+        }
+        }
+    }
+}
+// style the social media content
+.footer-sm {
+    background-color: #212121;
+
+    .social-media {
+
+        padding: 4rem;
+
+        a {
+            color: $secondary;
+
+            i {
+                font-size: 2rem;
+                margin-left: 1.2rem;
+            }
+        }
+
+    }
+}
+
+#nutriMap {
+    
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+// style the copyright content
+
+.footer-bottom {
+    background-color: $black;
+
+    &__copyright {
+        color: $light-green;
+        font-weight: 400;
+
+        a {
+            text-decoration: none;
+            color: $secondary;
+
+            &:hover {
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+//back to top button
+.back-to-top {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+
+    i {
+        color: $primary;
+        font-size: 1rem;
+        @include absoluteCenter;
+    }
+}
